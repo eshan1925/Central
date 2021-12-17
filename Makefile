@@ -19,7 +19,18 @@ tools:
 	mkdir ./Build/Fire
 	sh ./Scripts/compile_fire.sh
 
-all: prepenv tools mainweb
+portal: prepenv tools
+	mkdir ./Build/FireBuild
+	mkdir ./Build/FireBuild/firesource
+	cp -vr ./Templates/FireTemplates/*.firetemplate ./Build/FireBuild/
+	cp -vr ./Sources/PatternHouse/* ./Build/FireBuild/firesource
+	cp -vr ./Build/Fire/Fire-1.0.jar ./Build/FireBuild/
+	sh ./Scripts/run_fire.sh
+	mkdir ./Public/portal/
+	cp -vr ./FireBuild/basegen/* ./Public/portal/
+	cp -vr ./FireBuild/portal.build.log ./Public/portal/
+
+all: prepenv tools mainweb portal
 
 clean:
 	rm -rf ./Public
