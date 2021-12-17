@@ -6,6 +6,8 @@ mainweb:
 
 tools:
 	mkdir ./Build
+
+	mkdir ./Build/Fire
 	sh ./Scripts/compile_fire.sh
 
 all: tools mainweb
