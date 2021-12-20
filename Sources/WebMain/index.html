@@ -1,15 +1,229 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+
 <head>
-  <!-- ... -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="tailwind.css" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/fba88c99a7.js" crossorigin="anonymous"></script>
-  <title>PatternHouse</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+    <meta name="description" content="">
+
+
+    <title>PatternHouse</title>
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/icons.css">
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"
+        as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap">
+    </noscript>
 </head>
 
-PatternHouse Central <br>
-This is a test.
+<body>
+    <section class="menu navmenu">
+        <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+            <div class="container-fluid">
+                <div class="navbar-brand">
+                    <span class="navbar-logo">
+                        <a href="index.html">
+                            <img src="assets/logo.png" alt="Logo" style="height: 3rem;">
+                        </a>
+                    </span>
+                    <span class="navbar-caption-wrap"><a class="navbar-caption text-white text-primary display-7"
+                            href="index.html">PatternHouse</a></span>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse"
+                    data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
+                        <li class="nav-item"><a class="nav-link link text-white text-primary display-4"
+                                href="index.html">
+                                Home</a></li>
+                        <li class="nav-item"><a class="nav-link link text-white text-primary display-4"
+                                href="https://github.com/PatternHouse/website" target="_blank">GitHub</a></li>
+                    </ul>
+
+                    <div class="navbar-buttons section-btn"><a class="btn btn-primary display-4"
+                            href="https://portal.patternhouse.tk/"><span
+                                class="icon-arrow-right iconfont"></span>Browse patterns</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <section class="homepage fullscreen">
+        <div class="container">
+            <div class="media-container">
+                <div class="col-md-12 align-center">
+                    <img src="assets/logo.png" style="display: block; margin: auto;width: auto;">
+                    <h1 class="section-title white bold mb-3 display-1">PatternHouse</h1>
+                    <p class="text-normal white display-7">The largest database of code patterns</p>
+                    <div style="padding-bottom: 30px;" class="section-btn align-center"><a class="btn btn-primary display-4"
+                            href="https://portal.patternhouse.tk/">Browse patterns <span
+                            class="icon-arrow-right iconfont"></span></a></div>
+
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="card-wrapper">
+                                <div class="card-box align-center">
+                                    <span class="icon-open-source iconfont"></span>
+                                    <h4 class="card-title align-center black display-7">
+                                        <strong>Open Source</strong></h4>
+                                    <span style="color:white">All our code and websites are licensed under the permissive MIT License. 
+                                        That means you are free to copy, modify, embed and redistrubute any part of the project.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="card-wrapper">
+                                <div class="card-box align-center">
+                                    <span class="icon-database-sync-outline iconfont"></span>
+                                    <h4 class="card-title align-center black display-7">
+                                        <strong>Extensive</strong></h4>
+                                    <span style="color: white;">We have tried to build the largest possible collection of code patterns under one project.
+                                        Since the possiblities are endless we are constantly improving the quality and quantity of our database.</span> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="card-wrapper">
+                                <div class="card-box align-center">
+                                    <span class="icon-application-brackets-outline iconfont"></span>
+                                    <h4 class="card-title align-center black display-7">
+                                        <strong>Multiple Languages</strong></h4>
+                                    <span style="color: white;">We support an array of different programming languages for users of different tastes.
+                                        We are also working on expanding support for many other lanuages.</span>   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="card-wrapper">
+                                <div class="card-box align-center">
+                                    <span class="icon-account-group-outline iconfont"></span>
+                                    <h4 class="card-title align-center black display-7">
+                                        <strong>For developers, by developers</strong></h4>
+                                    <span style="color: white;">We are developers helping other developers and
+                                    we welcome all contributions from all developers, whether you are a beginner or not.</span>  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="thank">
+        <div class="container">
+            <div class="card-wrapper">
+                <div class="card-box align-left">
+                    <h4 class="section-title display-2"><strong>The developers would like to
+                            thank:</strong><strong><br></strong></h4>
+                </div>
+            </div>
+            <div class="row justify-content-center content-row mt-4">
+                <div class="card p-4 p-md-3 col-md-6 col-lg-3">
+                    <div class="card-box">
+                        <div class="title">
+                            <span class="num display-1"><strong>01.</strong></span>
+                        </div>
+                        <h4 class="card-title display-5">
+                            <a href="https://vercel.com/?utm_source=patternhouse&utm_campaign=oss" class="text-white"
+                                target="_blank"><strong>Vercel</strong></a></h4>
+                        <p class="text-normal card-text display-7">
+                            For sponsoring the project and&nbsp;for providing a platform to run our in-house Fire build
+                            tool that automatically tests, builds, and deploys front-end pages of our database.</p>
+                    </div>
+                </div>
+                <div class="card p-4 p-md-3 col-md-6 col-lg-3">
+                    <div class="card-box">
+                        <div class="title">
+                            <span class="num display-1"><strong>02.</strong></span>
+                        </div>
+                        <h4 class="card-title display-5">
+                            <p><a href="https://github.com" class="text-white"
+                                    target="_blank"><strong>GitHub</strong></a></p>
+                        </h4>
+                        <p class="text-normal card-text display-7">For hosting our codebase. We also have
+                            automated testing workflows through GitHub Actions
+                        </p>
+                    </div>
+                </div>
+                <div class="card p-4 p-md-3 col-md-6 col-lg-3">
+                    <div class="card-box">
+                        <div class="title">
+                            <span class="num display-1"><strong>03.</strong></span>
+                        </div>
+                        <h4 class="card-title display-5">
+                            <a href="https://cloudflare.com" class="text-white"
+                                target="_blank"><strong>Cloudflare</strong></a></h4>
+                        <p class="text-normal card-text display-7">For maintaining, and securing our
+                            domains and websites.
+                        </p>
+                    </div>
+                </div>
+                <div class="card p-4 p-md-3 col-md-6 col-lg-3">
+                    <div class="card-box">
+                        <div class="title">
+                            <span class="num display-1"><strong>04.</strong></span>
+                        </div>
+                        <h4 class="card-title display-5">
+                            <a href="https://getbootstrap.com" class="text-white"
+                                target="_blank"><strong>Bootstrap</strong></a></h4>
+                        <p class="text-normal card-text display-7">A CSS framework, that this website and
+                            other subdomains use to responsively render beautiful modern websites.
+                        </p>
+                    </div>
+                </div>
+                <div class="card p-4 p-md-3 col-md-6 col-lg-3">
+                    <div class="card-box">
+                        <div class="title">
+                            <span class="num display-1"><strong>05.</strong></span>
+                        </div>
+                        <h4 class="card-title display-5">
+                            <strong>Contributors</strong></h4>
+                        <p class="text-normal card-text display-7">
+                            For all their contributions and help to this project</p>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="container">
+            <div class="media-container-row align-center white">
+                <div class="col-12">
+                    <p class="text-normal mb-0 display-7">Copyright © 2021, PatternHouse Developers
+                        <br>Website licensed under MIT License
+                        <br>Contribute on <a href="https://github.com/PatternHouse/website" class="text-primary"
+                            target="_blank">GitHub</a>
+                        <br>Questions? Join our <a
+                            href="https://gitter.im/Printing-Pattern-Programs/community?utm_source=share-link&utm_medium=link&utm_campaign=share-link"
+                            class="text-primary" target="_blank">Gitter community</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/navbar-dropdown.js"></script>
+
+
+</body>
 
 </html>
