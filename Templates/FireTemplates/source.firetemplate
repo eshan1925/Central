@@ -1,0 +1,11 @@
+<section class="">
+    <div class="mx-0 p-4 md:mx-80"> 
+        <div class="p-4 text-lg"> PatternName </div> <br>
+        <img src="https://cdn.patternhouse.tk/store/$(FIRE_GOAL)/$(FIRE_GOAL_FILE)" height="200px" alt=""></img> <br> <br>
+        <section>
+            <div class="p-4 text-base" style="border:none; box-shadow:0 0 25px #b2b2b2; width:100%;"> 
+                $(FIRE_SOURCES)
+            </div> <br>
+        </section>
+    </div>
+</section>
