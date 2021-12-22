@@ -19,9 +19,9 @@ public class PatternBrowserBuilder extends FireExtensions {
     private static final String[] goals = { "alphabetic", "numeric", "pyramid", "series", "spiral", "string", "symbol", "wave" };
 
     private static final String[] fileNotFoundMessage = {
-            "---tip",
+            ":::tip",
             "We are currently awaiting contributions on this pattern for this language. Please check back later or contribute to this pattern.",
-            "---"
+            ":::"
     };
     private static final String[] languageSourceEnclosing = {
             "```$FIRE(MK_LANG_EX) title=\"$FIRE(PATTERN_SOURCE_NAME)\"",
