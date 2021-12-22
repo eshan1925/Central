@@ -1,6 +1,6 @@
-package tk.patternhouse.util;
+package tk.patternhouse;
 
-import tk.patternhouse.FireExtensions;
+import tk.patternhouse.util.FireExtensions;
 
 import java.util.Vector;
 
@@ -56,14 +56,15 @@ public class PatternBrowserBuilder extends FireExtensions {
                 // Create a Generated Pattern Name for the patternImage
                 // This will be in the format of (Capitalized Goal Name) + " Pattern " + (Numeric Part of patternImage)
                 // eg. "Alphabetic Pattern 20"
-                String genPatternName = (goal.substring(0, 1).toUpperCase() + goal.substring(1)) + " Pattern " + replacedPatternImage.replaceAll("\\D+","");
+                String capGoal = goal.substring(0, 1).toUpperCase() + goal.substring(1);
+                String genPatternName = capGoal + " Pattern " + replacedPatternImage.replaceAll("\\D+","");
 
                 // Create a vector based on template
                 Vector<String> outputVector = new Vector<>(1,1);
 
                 // Loop through template source and replace Fire variables
                 for(String templateString:get(TEMPLATE_INDEX)) {
-                    String processedTString = templateString.replace("$FIRE(GENERATED_PATTERN_NAME)", genPatternName).replace("$FIRE(GOAL)", goal).replace("$FIRE(PATTERN_NAME)", patternImage);
+                    String processedTString = templateString.replace("$FIRE(GENERATED_PATTERN_NAME)", genPatternName).replace("$FIRE(GOAL)", goal).replace("$FIRE(PATTERN_NAME)", patternImage.replace("Assets", "assets").substring(1));
                     outputVector.addElement(processedTString);
                 }
 
@@ -74,11 +75,10 @@ public class PatternBrowserBuilder extends FireExtensions {
 
                     // Get language suffix with pattern name
                     String sourceFile = replacedPatternImage + "." + languagesExtensions[i];
-                    String sourceFilePath = sourcesDir + goal + "/" + sourceFile;
+                    String sourceFilePath = sourcesDir + markdownFormattedLanguagesExtensions[i] + "/" + goal + "/" + getProperName(sourceFile);
 
                     // Check for source code for the pattern in the language
                     if(exists(sourceFilePath)) {
-
                         // Loads the enclosing statements for the languages and does the replacements accordingly
                         for(String st:languageSourceEnclosing) {
                             if(st.equals("$FIRE_LOAD_SOURCE()")) for(String src:get(read(sourceFilePath))) outputVector.addElement(src);
@@ -93,8 +93,9 @@ public class PatternBrowserBuilder extends FireExtensions {
                 }
 
                 // Write the Generated file for the pattern
-                mkdir(outputDir+goal+"/");
-                write(outputDir+goal+"/"+genPatternName+"."+outputExtension, outputVector);
+                String genGoalDir = capGoal + " Patterns";
+                mkdir(outputDir+genGoalDir+"/");
+                write(outputDir+genGoalDir+"/"+genPatternName+outputExtension, outputVector);
             }
 
         }

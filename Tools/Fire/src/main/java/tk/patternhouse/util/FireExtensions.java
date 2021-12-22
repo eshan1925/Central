@@ -1,4 +1,4 @@
-package tk.patternhouse;
+package tk.patternhouse.util;
 
 import tk.patternhouse.util.DirectStreamReader;
 import tk.patternhouse.util.DirectStreamWriter;
@@ -60,6 +60,11 @@ public class FireExtensions {
         File f = new File(dir);
         if(f.exists()) if(f.isDirectory()) return;
         (new File(dir)).mkdir();
+    }
+
+    protected static String getProperName(String st) {
+        File f = new File(st);
+        return f.getName();
     }
 
     protected static Vector<String> get(int vcacheindex) {

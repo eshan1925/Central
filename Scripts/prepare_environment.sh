@@ -1,5 +1,7 @@
 #!/bin/sh
 
+set -e
+
 git clone "https://github.com/PatternHouse/C-PatternHouse.git"
 mv ./C-PatternHouse/* ./Sources/PatternHouse/c/
 
