@@ -8,8 +8,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'PatternHouse Portal',
   tagline: 'Frontend Browser for PatternHouse Database',
-  url: 'https://www.patternhouse.tk/portal/',
-  baseUrl: '/',
+  url: 'https://www.patternhouse.tk',
+  baseUrl: '/portal/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
