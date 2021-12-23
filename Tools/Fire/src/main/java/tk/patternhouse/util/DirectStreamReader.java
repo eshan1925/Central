@@ -15,7 +15,7 @@ public class DirectStreamReader {
 	        while(true) {
 	            String st = br.readLine();
 	            if(st == null) break;
-	            vector.addElement(st.trim());
+	            vector.addElement(st);
 	        }
 	        br.close();
         } catch (IOException ioe) {

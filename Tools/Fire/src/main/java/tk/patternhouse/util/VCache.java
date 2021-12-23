@@ -4,11 +4,7 @@ import java.util.Vector;
 
 public class VCache {
 
-	private static Vector<Vector<String>> vcache;
-	
-	public static void init() {
-		vcache = new Vector<>(1,1);
-	}
+	private static Vector<Vector<String>> vcache = new Vector<>(1,1);
 	
 	public static int newCache() {
 		return storeCache(new Vector<String>(1,1));
