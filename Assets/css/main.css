@@ -277,7 +277,7 @@ img {
 }
 
 .card-box {
-    width: 100%
+    width: 100%;
 }
 
 .card-img {
@@ -563,6 +563,13 @@ ul {
         padding-left: 32px;
         padding-right: 32px
     }
+}
+
+.row>[class*=col] {
+    border-radius: 50px;
+    background-color: #191C17;
+    background-clip: content-box;
+    padding-bottom: 2rem;
 }
 
 .card-wrapper {
@@ -1137,7 +1144,8 @@ a {
 
 .thank .card-box,
 .thank .section-title {
-    color: #fff
+    color: #fff;
+    padding: 2rem;
 }
 
 .thank .card-text {
