@@ -187,11 +187,6 @@ strong {
     font-weight: bolder
 }
 
-.small,
-small {
-    font-size: .875em
-}
-
 a {
     color: #0d6efd;
     text-decoration: underline
@@ -535,21 +530,10 @@ button:not(:disabled) {
     flex: 0 0 auto;
     width: 91.66666667%
 }
-/* 
-@media screen {
-    .col-12 {
-        border-radius: 0 !important;
-        background-color: transparent !important;
-        background-clip: content-box;
-    }
-} */
 
 .col-12 {
     flex: 0 0 auto;
-    width: 100%;
-    /* border-radius: 50px;
-    background-color: #191C17;
-    background-clip: content-box; */
+    width: 100%
 }
 
 @media (min-width:768px) {
