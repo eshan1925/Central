@@ -277,7 +277,7 @@ img {
 }
 
 .card-box {
-    width: 100%
+    width: 100%;
 }
 
 .card-img {
@@ -565,8 +565,15 @@ ul {
     }
 }
 
+.row>[class*=col] {
+    border-radius: 50px;
+    background-color: #191C17;
+    background-clip: content-box;
+    padding-bottom: 2rem;
+}
+
 .card-wrapper {
-    overflow: hidden
+    overflow: hidden;
 }
 
 .dropdown-menu .dropdown-menu {
@@ -676,7 +683,7 @@ body {
 
 .btn {
     padding: .6rem 1.2rem;
-    border-radius: 4px
+    border-radius: 22px
 }
 
 .btn-md {
@@ -691,24 +698,13 @@ body {
 
 .btn-primary,
 .btn-primary:active {
-    background-color: #6592e6 !important;
-    border-color: #6592e6 !important;
-    color: #fff !important;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .2)
+    background-color: #005052 !important;
+    color: #A8EEF1 !important;
 }
 
 .btn-primary:focus,
 .btn-primary:hover {
-    color: #fff !important;
-    background-color: #2260d2 !important;
-    border-color: #2260d2 !important;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .2)
-}
-
-.btn-primary:disabled {
-    color: #fff !important;
-    background-color: #2260d2 !important;
-    border-color: #2260d2 !important
+    background-color: #015758 !important;
 }
 
 .text-primary {
@@ -879,7 +875,7 @@ a {
     transition: all .3s;
     border-bottom: 1px solid transparent;
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1);
-    background: #353535
+    background: #191C17
 }
 
 .navmenu .navbar .dropdown-item {
@@ -1086,7 +1082,7 @@ a {
 }
 
 .homepage {
-    background-color: #0f7699
+    background-color: #2c2c2c
 }
 
 .homepage .text-normal {
@@ -1100,8 +1096,7 @@ a {
 .homepage .card-wrapper {
     min-height: 220px;
     transition: all .3s;
-    border-radius: 4px;
-    padding: 1rem;
+    padding: 1.5rem;
     display: flex;
     justify-content: center;
     align-items: center
@@ -1119,9 +1114,8 @@ a {
 }
 
 .thank {
-    padding-top: 5rem;
     padding-bottom: 5rem;
-    background-color: #29a
+    background-color: #2C2C2C
 }
 
 .thank .text-normal {
@@ -1150,7 +1144,8 @@ a {
 
 .thank .card-box,
 .thank .section-title {
-    color: #fff
+    color: #fff;
+    padding: 2rem;
 }
 
 .thank .card-text {
