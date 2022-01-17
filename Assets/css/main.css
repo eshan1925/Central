@@ -1122,18 +1122,18 @@ a {
     color: #767676
 }
 
-.thank .title .num {
-    width: 100%;
-    display: block
-}
-
 .thank .title .card-title {
     z-index: 1
 }
 
-.thank .num {
-    color: #fff;
-    text-align: left
+.ty-logo > img {
+    border-radius: 50%;
+    width: 13vh;
+    margin: 0 auto;
+}
+
+.ty-logo {
+    padding-bottom: 15px;
 }
 
 @media (max-width:767px) {
