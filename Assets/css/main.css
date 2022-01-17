@@ -1126,10 +1126,11 @@ a {
     z-index: 1
 }
 
-.thank-logos {
+.ty-logo > img {
     border-radius: 50%;
     width: 13vh;
     margin: 0 auto;
+    padding-bottom: 10px;
 }
 
 @media (max-width:767px) {
